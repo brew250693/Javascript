@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<form>
+    <input type = "text" id="nhap1">
+    <input type = "text"  id="nhap2"><br/>
+    <button type = "button" onclick="Addition()"> Addition(+)</button>
+    <button type = "button" onclick="Subtraction()"> Subtraction(-)</button>
+    <button type = "button" onclick="Multiplication()"> Multiplication(*)</button>
+    <button type = "button" onclick="Division()"> Division(/)</button>
+    <p id="ketqua"></p><br/>
+
+</form>
+<script>
+    function Addition() {
+    let a= document.getElementById("nhap1").value;
+    let b= document.getElementById("nhap2").value;
+    let so1 = parseInt(a);
+    let so2 = parseInt(b);
+        let cong = so1 + so2;
+        document.getElementById("ketqua").innerHTML = "Result Addition : " + cong;
+    }
+    function Subtraction() {
+        let a= document.getElementById("nhap1").value;
+        let b= document.getElementById("nhap2").value;
+        let so1 = parseInt(a);
+        let so2 = parseInt(b);
+        let tru = so1 - so2;
+        document.getElementById("ketqua").innerHTML = "Result Subtration : " + tru;
+    }
+    function Multiplication() {
+        let a= document.getElementById("nhap1").value;
+        let b= document.getElementById("nhap2").value;
+        let so1 = parseInt(a);
+        let so2 = parseInt(b);
+        let nhan = so1 * so2;
+        document.getElementById("ketqua").innerHTML = "Result Multiplication : " + nhan;
+    }
+    function Division() {
+        let a= document.getElementById("nhap1").value;
+        let b= document.getElementById("nhap2").value;
+        let so1 = parseInt(a);
+        let so2 = parseInt(b);
+        let chia = so1 / so2;
+        document.getElementById("ketqua").innerHTML = "Result Division : " + chia;
+    }
+
+</script>
+</body>
+</html>
